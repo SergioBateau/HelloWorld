@@ -55,26 +55,12 @@ namespace HelloWorld
             beamH2.Position.Depth = Position.DepthEnum.MIDDLE;
 
             //hor beam
+            HorizontalBeam beamH3 = new HorizontalBeam();
+
             var firstPointH3 = new Point(0, y*2, z/2);
             var secondPointH3 = new Point(x, y*2, z/2);
-            var profileH3 = new Profile { ProfileString = "UB360*51" };
-            var materialH3 = new Material { MaterialString = "300PLUS" };
-            var classH3 = "1";
 
-            var beamH3 = new Beam
-            {
-                StartPoint = firstPointH3,
-                EndPoint = secondPointH3,
-                Profile = profileH3,
-                Material = materialH3,
-                Class = classH3
-            };
-
-            //beamH1.Insert();
-            beamH2.Insert();
-            beamH3.Insert();
-
-            model.CommitChanges();
+            beamH3.HorBeam(firstPointH3,secondPointH3, Position.DepthEnum.BEHIND);
 
             //letter E
             var firstPointE1 = new Point(2*x, y*2, 0);
