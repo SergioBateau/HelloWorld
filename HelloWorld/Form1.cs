@@ -36,23 +36,13 @@ namespace HelloWorld
 
             beamH1.Column(firstPointH1, secondPointH1);
 
-            //второй столбец
-            var firstPointH2 = new Point(x, 2*y, 0);
-            var secondPointH2 = new Point(x, 2*y, z);
-            var profileH2 = new Profile { ProfileString = "UC310*97" };
-            var materialH2 = new Material { MaterialString = "300PLUS" };
-            var classH2 = "2";
-            
-            var beamH2 = new Beam
-            {
-                StartPoint = firstPointH2,
-                EndPoint = secondPointH2,
-                Profile = profileH2,
-                Material = materialH2,
-                Class = classH2
-            };
+            //second column
+            VerticalColumn beamH2 = new VerticalColumn();
 
-            beamH2.Position.Depth = Position.DepthEnum.MIDDLE;
+            var firstPointH2 = new Point(x, 2 * y, 0);
+            var secondPointH2 = new Point(x, 2 * y, z);
+
+            beamH2.Column(firstPointH2, secondPointH2);
 
             //hor beam
             HorizontalBeam beamH3 = new HorizontalBeam();
