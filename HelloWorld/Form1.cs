@@ -27,23 +27,14 @@ namespace HelloWorld
             var z = 5000;
 
             // letter H
-            //первый столбец
-            var firstPointH1 = new Point(0, 2*y, 0);
-            var secondPointH1 = new Point(0, 2*y, z);
-            var profileH1 = new Profile { ProfileString = "UC310*97" };
-            var materialH1 = new Material { MaterialString = "300PLUS" };
-            var classH1 = "2";
+            //first column
 
-            var beamH1 = new Beam
-            {
-                StartPoint = firstPointH1,
-                EndPoint = secondPointH1,
-                Profile = profileH1,
-                Material = materialH1,
-                Class = classH1
-            };
+            VerticalColumn beamH1 = new VerticalColumn();
 
-            beamH1.Position.Depth = Position.DepthEnum.MIDDLE;
+            var firstPointH1 = new Point(0, 2 * y, 0);
+            var secondPointH1 = new Point(0, 2 * y, z);
+
+            beamH1.Column(firstPointH1, secondPointH1);
 
             //второй столбец
             var firstPointH2 = new Point(x, 2*y, 0);
@@ -51,7 +42,7 @@ namespace HelloWorld
             var profileH2 = new Profile { ProfileString = "UC310*97" };
             var materialH2 = new Material { MaterialString = "300PLUS" };
             var classH2 = "2";
-
+            
             var beamH2 = new Beam
             {
                 StartPoint = firstPointH2,
@@ -79,7 +70,7 @@ namespace HelloWorld
                 Class = classH3
             };
 
-            beamH1.Insert();
+            //beamH1.Insert();
             beamH2.Insert();
             beamH3.Insert();
 
@@ -203,24 +194,64 @@ namespace HelloWorld
 
             //letter W
             //первый столбец
-            var firstPointW1 = new Point(0, 2 * y, 0);
-            var secondPointW1 = new Point(0, 2 * y, z);
+            var firstPointW1 = new Point(x * 4 + 305, 0, 0);
+            var secondPointW1 = new Point(x * 4 + 305, 0, 1000);
             var profileW1 = new Profile { ProfileString = "UC310*97" };
-            var materialH1 = new Material { MaterialString = "300PLUS" };
-            var classH1 = "2";
+            var materialW1 = new Material { MaterialString = "300PLUS" };
+            var classW1 = "2";
 
-            var beamH1 = new Beam
+            var beamW1 = new Beam
             {
-                StartPoint = firstPointH1,
-                EndPoint = secondPointH1,
-                Profile = profileH1,
-                Material = materialH1,
-                Class = classH1
+                StartPoint = firstPointW1,
+                EndPoint = secondPointW1,
+                Profile = profileW1,
+                Material = materialW1,
+                Class = classW1
             };
 
-            beamH1.Position.Depth = Position.DepthEnum.MIDDLE;
+            beamW1.Position.Depth = Position.DepthEnum.MIDDLE;
 
+            //второй столбец
+            var firstPointW2 = new Point(x * 4, 0, 1000);
+            var secondPointW2 = new Point(x * 4, 0, z);
+            var profileW2 = new Profile { ProfileString = "UC310*97" };
+            var materialW2 = new Material { MaterialString = "300PLUS" };
+            var classW2 = "2";
 
+            var beamW2 = new Beam
+            {
+                StartPoint = firstPointW2,
+                EndPoint = secondPointW2,
+                Profile = profileW2,
+                Material = materialW2,
+                Class = classW2
+            };
+
+            beamW2.Position.Depth = Position.DepthEnum.MIDDLE;
+
+            beamW1.Insert();
+            beamW2.Insert();
+
+            //slope beam
+            var firstPointW3 = new Point(x * 4 + 305, 0, 1000);
+            var secondPointW3 = new Point(x * 4 + x / 2, 0, z / 2);
+            var profileW3 = new Profile { ProfileString = "UB360*51" };
+            var materialW3 = new Material { MaterialString = "300PLUS" };
+            var classW3 = "1";
+
+            var beamW3 = new Beam
+            {
+                StartPoint = firstPointW3,
+                EndPoint = secondPointW3,
+                Profile = profileW3,
+                Material = materialW3,
+                Class = classW3
+            };
+
+            beamW3.Position.Depth = Position.DepthEnum.BEHIND;
+
+            beamW3.Insert();
+            
 
             model.CommitChanges();
         }
