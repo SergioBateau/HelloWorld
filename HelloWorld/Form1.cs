@@ -22,35 +22,15 @@ namespace HelloWorld
         {
             var model = new Model();
 
-            var x = 3000;
-            var y = 4000;
-            var z = 5000;
+            int x = 3000;
+            int y = 4000;
+            int z = 5000;
 
             // letter H
-            //first column
+            LetterH letterH = new LetterH();
+            letterH.LetterHCreate();
 
-            VerticalColumn beamH1 = new VerticalColumn();
 
-            var firstPointH1 = new Point(0, 2 * y, 0);
-            var secondPointH1 = new Point(0, 2 * y, z);
-
-            beamH1.Column(firstPointH1, secondPointH1);
-
-            //second column
-            VerticalColumn beamH2 = new VerticalColumn();
-
-            var firstPointH2 = new Point(x, 2 * y, 0);
-            var secondPointH2 = new Point(x, 2 * y, z);
-
-            beamH2.Column(firstPointH2, secondPointH2);
-
-            //hor beam
-            HorizontalBeam beamH3 = new HorizontalBeam();
-
-            var firstPointH3 = new Point(0, y*2, z/2);
-            var secondPointH3 = new Point(x, y*2, z/2);
-
-            beamH3.HorBeam(firstPointH3,secondPointH3, Position.DepthEnum.BEHIND);
 
             //letter E
             var firstPointE1 = new Point(2*x, y*2, 0);
