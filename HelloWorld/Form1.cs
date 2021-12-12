@@ -83,6 +83,7 @@ namespace HelloWorld
 
             //letter E
             var firstPointE1 = new Point(0, 8000, 0);
+
             var secondPointE1 = new Point(0, 8000, 5000);
             var profileE1 = new Profile { ProfileString = "UC310*97" };
             var materialE1 = new Material { MaterialString = "300PLUS" };
