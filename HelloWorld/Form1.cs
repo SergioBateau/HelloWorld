@@ -64,8 +64,8 @@ namespace HelloWorld
             beamH2.Position.Depth = Position.DepthEnum.MIDDLE;
 
             //hor beam
-            var firstPointH3 = new Point(0, y, z/2);
-            var secondPointH3 = new Point(x, y, z/2);
+            var firstPointH3 = new Point(0, y*2, z/2);
+            var secondPointH3 = new Point(x, y*2, z/2);
             var profileH3 = new Profile { ProfileString = "UB360*51" };
             var materialH3 = new Material { MaterialString = "300PLUS" };
             var classH3 = "1";
@@ -88,7 +88,7 @@ namespace HelloWorld
             //letter E
             var firstPointE1 = new Point(2*x, y*2, 0);
 
-            var secondPointE1 = new Point(2*x, y*2, z/2);
+            var secondPointE1 = new Point(2*x, y*2, z);
             var profileE1 = new Profile { ProfileString = "UC310*97" };
             var materialE1 = new Material { MaterialString = "300PLUS" };
             var classE1 = "2";
@@ -160,6 +160,67 @@ namespace HelloWorld
             beamE2.Insert();
             beamE3.Insert();
             beamE4.Insert();
+
+            // letter L
+            //первый столбец
+            var firstPointL1 = new Point(x*4, 2 * y, 0);
+            var secondPointL1 = new Point(x*4, 2 * y, z);
+            var profileL1 = new Profile { ProfileString = "UC310*97" };
+            var materialL1 = new Material { MaterialString = "300PLUS" };
+            var classL1 = "2";
+
+            var beamL1 = new Beam
+            {
+                StartPoint = firstPointL1,
+                EndPoint = secondPointL1,
+                Profile = profileL1,
+                Material = materialL1,
+                Class = classL1
+            };
+
+            beamL1.Position.Depth = Position.DepthEnum.MIDDLE;
+
+            //hor bottom beam 
+            var firstPointL2 = new Point(x * 4, y * 2, 0);
+            var secondPointL2 = new Point(x * 5, y * 2, 0);
+            var profileL2 = new Profile { ProfileString = "UB360*51" };
+            var materialL2 = new Material { MaterialString = "300PLUS" };
+            var classL2 = "1";
+
+            var beamL2 = new Beam
+            {
+                StartPoint = firstPointL2,
+                EndPoint = secondPointL2,
+                Profile = profileL2,
+                Material = materialL2,
+                Class = classL2
+            };
+
+            beamL2.Position.Depth = Position.DepthEnum.FRONT;
+
+            beamL1.Insert();
+            beamL2.Insert();
+
+            //letter W
+            //первый столбец
+            var firstPointW1 = new Point(0, 2 * y, 0);
+            var secondPointW1 = new Point(0, 2 * y, z);
+            var profileW1 = new Profile { ProfileString = "UC310*97" };
+            var materialH1 = new Material { MaterialString = "300PLUS" };
+            var classH1 = "2";
+
+            var beamH1 = new Beam
+            {
+                StartPoint = firstPointH1,
+                EndPoint = secondPointH1,
+                Profile = profileH1,
+                Material = materialH1,
+                Class = classH1
+            };
+
+            beamH1.Position.Depth = Position.DepthEnum.MIDDLE;
+
+
 
             model.CommitChanges();
         }
