@@ -119,8 +119,8 @@ namespace HelloWorld
             beamE2.Position.Depth = Position.DepthEnum.FRONT;
 
             //hor middle beam
-            var firstPointE3 = new Point(0, 8000, 2500);
-            var secondPointE3 = new Point(3000, 8000, 2500);
+            var firstPointE3 = new Point(6000, 8000, 2500);
+            var secondPointE3 = new Point(9000, 8000, 2500);
             var profileE3 = new Profile { ProfileString = "UB360*51" };
             var materialE3 = new Material { MaterialString = "300PLUS" };
             var classE3 = "1";
