@@ -22,9 +22,6 @@ namespace HelloWorld
         {
             var model = new Model();
 
-            int x = 3000;
-            int y = 4000;
-            int z = 5000;
 
             // letter H
             LetterH letterH = new LetterH();
