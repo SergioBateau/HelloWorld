@@ -62,6 +62,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HorizontalBeam.cs" />
+    <Compile Include="LetterD.cs" />
     <Compile Include="LetterE.cs" />
     <Compile Include="LetterH.cs" />
     <Compile Include="Program.cs" />

@@ -34,6 +34,10 @@ namespace HelloWorld
             LetterE letterE = new LetterE();
             letterE.LetterECreate();
 
+            //letter D
+            LetterD letterD = new LetterD();
+            letterD.LetterDCreate();
+
 
             // letter L
             //первый столбец
