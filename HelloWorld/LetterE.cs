@@ -21,8 +21,8 @@ namespace HelloWorld
             //first column
             VerticalColumn beamE1 = new VerticalColumn();
 
-            var firstPointE1 = new Point(0, y, 0);
-            var secondPointE1 = new Point(0, y, z);
+            var firstPointE1 = new Point(x, y, 0);
+            var secondPointE1 = new Point(x, y, z);
 
             beamE1.Column(firstPointE1, secondPointE1);
 

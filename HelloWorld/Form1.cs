@@ -22,6 +22,10 @@ namespace HelloWorld
         {
             var model = new Model();
 
+            var x = 3000;
+            var y = 4000;
+            var z = 5000;
+
             // letter H
             LetterH letterH = new LetterH();
             letterH.LetterHCreate();
