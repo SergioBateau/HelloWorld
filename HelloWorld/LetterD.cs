@@ -56,7 +56,7 @@ namespace HelloWorld
             var firstPointD5 = new Point(x + 1500, 0, 0);
             var secondPointD5 = new Point(x + x / 12, 0, z - 4000);
 
-            beamD5.HorBeam(firstPointD5, secondPointD5, Position.DepthEnum.BEHIND);
+            beamD5.HorBeam(firstPointD5, secondPointD5, Position.DepthEnum.FRONT);
 
             //second column
             VerticalColumn beamD6 = new VerticalColumn();
