@@ -40,7 +40,7 @@ namespace HelloWorld
             var firstPointE3 = new Point(x, y, z / 2);
             var secondPointE3 = new Point(x + x / 2, y, z / 2);
 
-            beamE2.HorBeam(firstPointE3, secondPointE3, Position.DepthEnum.BEHIND);
+            beamE3.HorBeam(firstPointE3, secondPointE3, Position.DepthEnum.BEHIND);
 
             //top beam
             HorizontalBeam beamE4 = new HorizontalBeam();
@@ -48,7 +48,7 @@ namespace HelloWorld
             var firstPointE4 = new Point(x, y, z);
             var secondPointE4 = new Point(x + x / 2, y, z);
 
-            beamE2.HorBeam(firstPointE4, secondPointE4, Position.DepthEnum.BEHIND);
+            beamE4.HorBeam(firstPointE4, secondPointE4, Position.DepthEnum.BEHIND);
         }
     }
 }
