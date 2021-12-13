@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Tekla.Structures.Model;
 using Tekla.Structures.Geometry3d;
-using HelloWorld;
 
 namespace HelloWorld
 {
@@ -44,8 +43,5 @@ namespace HelloWorld
 
             beamH3.HorBeam(firstPointH3, secondPointH3, Position.DepthEnum.BEHIND);
         }
-
-
-
     }
 }

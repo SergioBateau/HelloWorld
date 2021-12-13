@@ -10,9 +10,9 @@ namespace HelloWorld
 {
     class Data
     {
-        public int x = 3000;
-        public int y = 4000;
-        public int z = 5000;
+        public int x;
+        public int y;
+        public int z;
         public void DataVar(int x, int y, int z)
         {
             this.x = x;

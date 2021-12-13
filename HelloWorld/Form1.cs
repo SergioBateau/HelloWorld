@@ -22,88 +22,14 @@ namespace HelloWorld
         {
             var model = new Model();
 
-
             // letter H
             LetterH letterH = new LetterH();
             letterH.LetterHCreate();
 
-
-
             //letter E
-            var firstPointE1 = new Point(2*x, y*2, 0);
+            LetterE letterE = new LetterE();
+            letterE.LetterECreate();
 
-            var secondPointE1 = new Point(2*x, y*2, z);
-            var profileE1 = new Profile { ProfileString = "UC310*97" };
-            var materialE1 = new Material { MaterialString = "300PLUS" };
-            var classE1 = "2";
-
-            var beamE1 = new Beam
-            {
-                StartPoint = firstPointE1,
-                EndPoint = secondPointE1,
-                Profile = profileE1,
-                Material = materialE1,
-                Class = classE1
-            };
-
-            beamE1.Position.Depth = Position.DepthEnum.MIDDLE;
-
-            //hor bottom beam 
-            var firstPointE2 = new Point(x*2, y*2, 0);
-            var secondPointE2 = new Point(x*3, y*2, 0);
-            var profileE2 = new Profile { ProfileString = "UB360*51" };
-            var materialE2 = new Material { MaterialString = "300PLUS" };
-            var classE2 = "1";
-
-            var beamE2 = new Beam
-            {
-                StartPoint = firstPointE2,
-                EndPoint = secondPointE2,
-                Profile = profileE2,
-                Material = materialE2,
-                Class = classE2
-            };
-
-            beamE2.Position.Depth = Position.DepthEnum.FRONT;
-
-            //hor middle beam
-            var firstPointE3 = new Point(x*2, y*2, z/2);
-            var secondPointE3 = new Point(x*3, y*2, z/2);
-            var profileE3 = new Profile { ProfileString = "UB360*51" };
-            var materialE3 = new Material { MaterialString = "300PLUS" };
-            var classE3 = "1";
-
-            var beamE3 = new Beam
-            {
-                StartPoint = firstPointE3,
-                EndPoint = secondPointE3,
-                Profile = profileE3,
-                Material = materialE3,
-                Class = classE3
-            };
-
-            //hor top beam
-            var firstPointE4 = new Point(x*2, y*2, z);
-            var secondPointE4 = new Point(x*3, y*2, z);
-            var profileE4 = new Profile { ProfileString = "UB360*51" };
-            var materialE4 = new Material { MaterialString = "300PLUS" };
-            var classE4 = "1";
-
-            var beamE4 = new Beam
-            {
-                StartPoint = firstPointE4,
-                EndPoint = secondPointE4,
-                Profile = profileE4,
-                Material = materialE4,
-                Class = classE4
-            };
-
-            beamE4.Position.Depth = Position.DepthEnum.BEHIND;
-
-            beamE1.Insert();
-            beamE2.Insert();
-            beamE3.Insert();
-            beamE4.Insert();
 
             // letter L
             //первый столбец
