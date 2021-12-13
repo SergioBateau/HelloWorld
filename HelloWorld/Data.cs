@@ -10,14 +10,17 @@ namespace HelloWorld
 {
     class Data
     {
-        int coordX = 0;
-        int coordY = 0;
-        int coordZ = 0;
+        public int x = 3000;
+        public int y = 4000;
+        public int z = 5000;
         public void DataVar(int x, int y, int z)
         {
-            this.coordX = x;
-            this.coordY = y;
-            this.coordZ = z;
+            this.x = x;
+            this.y = y;
+            this.z = z;
+
         }
     }
+
+
 }

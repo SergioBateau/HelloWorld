@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tekla.Structures.Model;
 using Tekla.Structures.Geometry3d;
+using HelloWorld;
 
 namespace HelloWorld
 {
@@ -12,9 +13,12 @@ namespace HelloWorld
     {
         public void LetterHCreate()
         {
-            int x = 3000;
-            int y = 4000;
-            int z = 5000;
+            Data data = new Data();
+            data.DataVar(3000, 4000, 5000);
+            var x = data.x;
+            var y = data.y;
+            var z = data.z;
+
 
             //first column
             VerticalColumn beamH1 = new VerticalColumn();
