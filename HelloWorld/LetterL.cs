@@ -29,8 +29,8 @@ namespace HelloWorld
             //bottom beam
             HorizontalBeam beamL2 = new HorizontalBeam();
 
-            var firstPointL2 = new Point(x * 4, y, 0);
-            var secondPointL2 = new Point(x * 5, y, 0);
+            var firstPointL2 = new Point(x * 4, y * 2, 0);
+            var secondPointL2 = new Point(x * 5, y * 2, 0);
 
             beamL2.HorBeam(firstPointL2, secondPointL2, Position.DepthEnum.FRONT);
         }
@@ -54,8 +54,8 @@ namespace HelloWorld
             //bottom beam
             HorizontalBeam beamL2 = new HorizontalBeam();
 
-            var firstPointL2 = new Point(x * 6, y, 0);
-            var secondPointL2 = new Point(x * 7, y, 0);
+            var firstPointL2 = new Point(x * 6, y * 2, 0);
+            var secondPointL2 = new Point(x * 7, y * 2, 0);
 
             beamL2.HorBeam(firstPointL2, secondPointL2, Position.DepthEnum.FRONT);
         }
