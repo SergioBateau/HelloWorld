@@ -23,8 +23,8 @@ namespace HelloWorld
             PlateDetail plate1 = new PlateDetail();
 
             var pointPlate1 = new ContourPoint(new Point(0 - (x / 2), 0 - (y / 2), 0),null);
-            var pointPlate2 = new ContourPoint(new Point(x / 2, y / 2, 0), null);
-            var pointPlate3 = new ContourPoint(new Point(x / 2, y / 2, z), null);
+            var pointPlate2 = new ContourPoint(new Point(x / 2, 0 - (y / 2), 0), null);
+            var pointPlate3 = new ContourPoint(new Point(x / 2, 0 - (y / 2), z), null);
             var pointPlate4 = new ContourPoint(new Point(0 - (x / 2), 0 - (y / 2), z), null);
 
             plate1.ConPlate(
@@ -39,8 +39,8 @@ namespace HelloWorld
 
             var pointPlate5 = new ContourPoint(new Point(x / 2, y / 2, 0), null);
             var pointPlate6 = new ContourPoint(new Point(x / 2, y / 2, z), null);
-            var pointPlate7 = new ContourPoint(new Point(0 - (x / 2),0 - (y / 2), z), null);
-            var pointPlate8 = new ContourPoint(new Point(0 - (x / 2), 0 - (y / 2), 0), null);
+            var pointPlate7 = new ContourPoint(new Point(0 - (x / 2), y / 2, z), null);
+            var pointPlate8 = new ContourPoint(new Point(0 - (x / 2), y / 2, 0), null);
 
             plate2.ConPlate(
                 pointPlate5, 
@@ -48,6 +48,21 @@ namespace HelloWorld
                 pointPlate7, 
                 pointPlate8, 
                 Position.DepthEnum.BEHIND);
+
+            //third plate
+            PlateDetail plate3 = new PlateDetail();
+
+            var pointPlate9 = new ContourPoint(new Point(0, 0 - (y / 2), 0), null);
+            var pointPlate10 = new ContourPoint(new Point(0, 0 - (y / 2), z), null);
+            var pointPlate11 = new ContourPoint(new Point(0, y / 2, z), null);
+            var pointPlate12 = new ContourPoint(new Point(0, y / 2, 0), null);
+
+            plate3.ConPlate(
+                pointPlate9,
+                pointPlate10,
+                pointPlate11,
+                pointPlate12,
+                Position.DepthEnum.MIDDLE);
         }
     }
 }
