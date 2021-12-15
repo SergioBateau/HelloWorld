@@ -59,6 +59,10 @@ namespace HelloWorld
             LetterR letterR = new LetterR();
             letterR.LetterRCreate();
 
+            //exclamation point
+            ExclamationPoint exclamationPoint = new ExclamationPoint();
+            exclamationPoint.ExclamationPointCreate();
+
             model.CommitChanges();
         }
     }
