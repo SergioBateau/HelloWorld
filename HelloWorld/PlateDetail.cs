@@ -14,7 +14,8 @@ namespace HelloWorld
             ContourPoint pointPlate1, 
             ContourPoint pointPlate2, 
             ContourPoint pointPlate3, 
-            ContourPoint pointPlate4
+            ContourPoint pointPlate4,
+            Position.DepthEnum dep
             )
         {
             ContourPlate plate = new ContourPlate();
@@ -29,10 +30,10 @@ namespace HelloWorld
             plate.AddContourPoint(pointPlate3);
             plate.AddContourPoint(pointPlate4);
 
-            plate.Profile.ProfileString = "PL6";
+            plate.Profile.ProfileString = "PL10";
             plate.Material.MaterialString = "250";
             plate.Class = "4";
-            plate.Position.Depth = Position.DepthEnum.FRONT;
+            plate.Position.Depth = dep;
             bool result = false;
             result = plate.Insert();
 
