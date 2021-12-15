@@ -41,43 +41,14 @@ namespace HelloWorld
 
             // letter L
             //первый столбец
-            var firstPointL1 = new Point(x*4, 2 * y, 0);
-            var secondPointL1 = new Point(x*4, 2 * y, z);
-            var profileL1 = new Profile { ProfileString = "UC310*97" };
-            var materialL1 = new Material { MaterialString = "300PLUS" };
-            var classL1 = "2";
+            LetterL letterL1 = new LetterL();
+            letterL1.LetterFirstLCreate();
 
-            var beamL1 = new Beam
-            {
-                StartPoint = firstPointL1,
-                EndPoint = secondPointL1,
-                Profile = profileL1,
-                Material = materialL1,
-                Class = classL1
-            };
+            LetterL letterL2 = new LetterL();
+            letterL2.LetterSecondLCreate();
 
-            beamL1.Position.Depth = Position.DepthEnum.MIDDLE;
-
-            //hor bottom beam 
-            var firstPointL2 = new Point(x * 4, y * 2, 0);
-            var secondPointL2 = new Point(x * 5, y * 2, 0);
-            var profileL2 = new Profile { ProfileString = "UB360*51" };
-            var materialL2 = new Material { MaterialString = "300PLUS" };
-            var classL2 = "1";
-
-            var beamL2 = new Beam
-            {
-                StartPoint = firstPointL2,
-                EndPoint = secondPointL2,
-                Profile = profileL2,
-                Material = materialL2,
-                Class = classL2
-            };
-
-            beamL2.Position.Depth = Position.DepthEnum.FRONT;
-
-            beamL1.Insert();
-            beamL2.Insert();
+            LetterL letterL3 = new LetterL();
+            letterL3.LetterThirdLCreate();
 
             //letter W
             //первый столбец
