@@ -67,6 +67,7 @@
     <Compile Include="LetterH.cs" />
     <Compile Include="LetterL.cs" />
     <Compile Include="LetterO.cs" />
+    <Compile Include="LetterW.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VerticalColumn.cs" />
