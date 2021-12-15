@@ -48,7 +48,7 @@ namespace HelloWorld
             var firstPointO4 = new Point(x * 8, y * 2, z);
             var secondPointO4 = new Point(x * 9, y * 2, z);
 
-            beamO4.HorBeam(firstPointO4, secondPointO4, Position.DepthEnum.FRONT);
+            beamO4.HorBeam(firstPointO4, secondPointO4, Position.DepthEnum.BEHIND);
         }
 
         public void LetterSecondOCreate()
@@ -89,7 +89,7 @@ namespace HelloWorld
             var firstPointO4 = new Point(x * 6, 0, z);
             var secondPointO4 = new Point(x * 7, 0, z);
 
-            beamO4.HorBeam(firstPointO4, secondPointO4, Position.DepthEnum.FRONT);
+            beamO4.HorBeam(firstPointO4, secondPointO4, Position.DepthEnum.BEHIND);
         }
     }
 }
