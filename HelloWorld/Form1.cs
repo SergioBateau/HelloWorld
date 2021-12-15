@@ -40,7 +40,6 @@ namespace HelloWorld
 
 
             // letter L
-            //первый столбец
             LetterL letterL1 = new LetterL();
             letterL1.LetterFirstLCreate();
 
@@ -50,8 +49,16 @@ namespace HelloWorld
             LetterL letterL3 = new LetterL();
             letterL3.LetterThirdLCreate();
 
+            // letter O
+            LetterO letterO1 = new LetterO();
+            letterO1.LetterFirstOCreate();
+
+            LetterO letterO2 = new LetterO();
+            letterO2.LetterSecondOCreate();
+
+
             //letter W
-            //первый столбец
+
             var firstPointW1 = new Point(x * 4 + 305, 0, 0);
             var secondPointW1 = new Point(x * 4 + 305, 0, 1000);
             var profileW1 = new Profile { ProfileString = "UC310*97" };
