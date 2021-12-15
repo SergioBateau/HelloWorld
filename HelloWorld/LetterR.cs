@@ -50,8 +50,13 @@ namespace HelloWorld
 
             beamR4.Column(firstPointR4, secondPointR4);
 
+            //slope beam
+            HorizontalBeam beamR5 = new HorizontalBeam();
 
+            var firstPointR5 = new Point(x * 8, 0, z / 2);
+            var secondPointR5 = new Point(x * 9, 0, 0);
 
+            beamR5.HorBeam(firstPointR5, secondPointR5, Position.DepthEnum.FRONT);
         }
 
     }

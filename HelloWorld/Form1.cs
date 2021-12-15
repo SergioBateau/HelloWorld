@@ -55,6 +55,10 @@ namespace HelloWorld
             LetterW letterW = new LetterW();
             letterW.LetterWCreate();
 
+            //letter R
+            LetterR letterR = new LetterR();
+            letterR.LetterRCreate();
+
             model.CommitChanges();
         }
     }
