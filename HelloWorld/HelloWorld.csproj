@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExclamationPoint.cs" />
+    <Compile Include="GridCreate.cs" />
     <Compile Include="PlateDetail.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Form1.cs">

@@ -22,6 +22,10 @@ namespace HelloWorld
         {
             var model = new Model();
 
+            //grid
+            GridCreate grid = new GridCreate();
+            grid.GridCreating();
+
             // letter H
             LetterH letterH = new LetterH();
             letterH.LetterHCreate();
