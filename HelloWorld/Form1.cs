@@ -60,8 +60,11 @@ namespace HelloWorld
             letterR.LetterRCreate();
 
             //exclamation point
-            ExclamationPoint exclamationPoint = new ExclamationPoint();
-            exclamationPoint.ExclamationPointCreate();
+            ExclamationPoint exclamationPoint1 = new ExclamationPoint();
+            exclamationPoint1.ExclamationPoint1Create();
+
+            ExclamationPoint exclamationPoint2 = new ExclamationPoint();
+            exclamationPoint2.ExclamationPoint2Create();
 
             model.CommitChanges();
         }
