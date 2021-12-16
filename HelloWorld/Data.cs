@@ -13,6 +13,7 @@ namespace HelloWorld
         public int x;
         public int y;
         public int z;
+
         public void DataVar(int x, int y, int z)
         {
             this.x = x;

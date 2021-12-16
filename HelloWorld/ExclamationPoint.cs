@@ -11,6 +11,7 @@ namespace HelloWorld
 {
     class ExclamationPoint
     {
+        public int l = 14 * 3000;
         public void ExclamationPoint1Create()
         {
             Data data = new Data();
@@ -18,14 +19,15 @@ namespace HelloWorld
             var x = data.x;
             var y = data.y;
             var z = data.z;
+            
 
-            //first profile
+            //first plate
             PlateDetail plate1 = new PlateDetail();
 
-            var pointPlate1 = new ContourPoint(new Point(0 - (x / 2), 0 - (y / 2), 0),null);
-            var pointPlate2 = new ContourPoint(new Point(x / 2, 0 - (y / 2), 0), null);
-            var pointPlate3 = new ContourPoint(new Point(x / 2, 0 - (y / 2), z), null);
-            var pointPlate4 = new ContourPoint(new Point(0 - (x / 2), 0 - (y / 2), z), null);
+            var pointPlate1 = new ContourPoint(new Point(l - (x / 2), 0 - (y / 2), 0),null);
+            var pointPlate2 = new ContourPoint(new Point(l + x / 2, 0 - (y / 2), 0), null);
+            var pointPlate3 = new ContourPoint(new Point(l + x / 2, 0 - (y / 2), z), null);
+            var pointPlate4 = new ContourPoint(new Point(l - (x / 2), 0 - (y / 2), z), null);
 
             plate1.ConPlate(
                 pointPlate1, 
@@ -37,10 +39,10 @@ namespace HelloWorld
             //second plate
             PlateDetail plate2 = new PlateDetail();
 
-            var pointPlate5 = new ContourPoint(new Point(x / 2, y / 2, 0), null);
-            var pointPlate6 = new ContourPoint(new Point(x / 2, y / 2, z), null);
-            var pointPlate7 = new ContourPoint(new Point(0 - (x / 2), y / 2, z), null);
-            var pointPlate8 = new ContourPoint(new Point(0 - (x / 2), y / 2, 0), null);
+            var pointPlate5 = new ContourPoint(new Point(l + x / 2, y / 2, 0), null);
+            var pointPlate6 = new ContourPoint(new Point(l + x / 2, y / 2, z), null);
+            var pointPlate7 = new ContourPoint(new Point(l - (x / 2), y / 2, z), null);
+            var pointPlate8 = new ContourPoint(new Point(l - (x / 2), y / 2, 0), null);
 
             plate2.ConPlate(
                 pointPlate5, 
@@ -52,10 +54,10 @@ namespace HelloWorld
             //third plate
             PlateDetail plate3 = new PlateDetail();
 
-            var pointPlate9 = new ContourPoint(new Point(0, 0 - (y / 2), 0), null);
-            var pointPlate10 = new ContourPoint(new Point(0, 0 - (y / 2), z), null);
-            var pointPlate11 = new ContourPoint(new Point(0, y / 2, z), null);
-            var pointPlate12 = new ContourPoint(new Point(0, y / 2, 0), null);
+            var pointPlate9 = new ContourPoint(new Point(l, 0 - (y / 2), 0), null);
+            var pointPlate10 = new ContourPoint(new Point(l, 0 - (y / 2), z), null);
+            var pointPlate11 = new ContourPoint(new Point(l, y / 2, z), null);
+            var pointPlate12 = new ContourPoint(new Point(l, y / 2, 0), null);
 
             plate3.ConPlate(
                 pointPlate9,
@@ -73,13 +75,13 @@ namespace HelloWorld
             var y = data.y;
             var z = data.z;
 
-            //first profile
+            //first plate
             PlateDetail plate1 = new PlateDetail();
 
-            var pointPlate1 = new ContourPoint(new Point(0 - (x / 2), 0 - (y / 2), z-4000), null);
-            var pointPlate2 = new ContourPoint(new Point(x / 2, 0 - (y / 2), z - 4000), null);
-            var pointPlate3 = new ContourPoint(new Point(x / 2, 0 - (y / 2), z), null);
-            var pointPlate4 = new ContourPoint(new Point(0 - (x / 2), 0 - (y / 2), z), null);
+            var pointPlate1 = new ContourPoint(new Point(l - (x / 2), 0 - (y / 2), z-4000), null);
+            var pointPlate2 = new ContourPoint(new Point(l + x / 2, 0 - (y / 2), z - 4000), null);
+            var pointPlate3 = new ContourPoint(new Point(l + x / 2, 0 - (y / 2), z), null);
+            var pointPlate4 = new ContourPoint(new Point(l - (x / 2), 0 - (y / 2), z), null);
 
             plate1.ConPlate(
                 pointPlate1,
@@ -91,10 +93,10 @@ namespace HelloWorld
             //second plate
             PlateDetail plate2 = new PlateDetail();
 
-            var pointPlate5 = new ContourPoint(new Point(x / 2, y / 2, z - 4000), null);
-            var pointPlate6 = new ContourPoint(new Point(x / 2, y / 2, z), null);
-            var pointPlate7 = new ContourPoint(new Point(0 - (x / 2), y / 2, z), null);
-            var pointPlate8 = new ContourPoint(new Point(0 - (x / 2), y / 2, z - 4000), null);
+            var pointPlate5 = new ContourPoint(new Point(l + x / 2, y / 2, z - 4000), null);
+            var pointPlate6 = new ContourPoint(new Point(l + x / 2, y / 2, z), null);
+            var pointPlate7 = new ContourPoint(new Point(l - (x / 2), y / 2, z), null);
+            var pointPlate8 = new ContourPoint(new Point(l - (x / 2), y / 2, z - 4000), null);
 
             plate2.ConPlate(
                 pointPlate5,
@@ -106,10 +108,10 @@ namespace HelloWorld
             //third plate
             PlateDetail plate3 = new PlateDetail();
 
-            var pointPlate9 = new ContourPoint(new Point(0, 0 - (y / 2), z - 4000), null);
-            var pointPlate10 = new ContourPoint(new Point(0, 0 - (y / 2), z), null);
-            var pointPlate11 = new ContourPoint(new Point(0, y / 2, z), null);
-            var pointPlate12 = new ContourPoint(new Point(0, y / 2, z - 4000), null);
+            var pointPlate9 = new ContourPoint(new Point(l, 0 - (y / 2), z - 4000), null);
+            var pointPlate10 = new ContourPoint(new Point(l, 0 - (y / 2), z), null);
+            var pointPlate11 = new ContourPoint(new Point(l, y / 2, z), null);
+            var pointPlate12 = new ContourPoint(new Point(l, y / 2, z - 4000), null);
 
             plate3.ConPlate(
                 pointPlate9,
