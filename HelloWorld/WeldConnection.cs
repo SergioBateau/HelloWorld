@@ -8,5 +8,6 @@ namespace HelloWorld
 {
     class WeldConnection
     {
+        WeldConnection weld = new WeldConnection();
     }
 }
